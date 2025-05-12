@@ -141,14 +141,14 @@
     <div class="grid-boxes">
       <div class="info-box">
         <p style="margin: 0; font-weight: bold; font-size: 18px;">Anlagebetrag</p>
-        <p style="margin: 5px 0; color: green; font-weight: bold; font-size: 18px;">EUR 100.000,00</p>
-        <p style="margin: 0; color: #333; font-size: 15px;">CHF 92.470,00 bei Kurs 0,9247</p>
+        <p style="margin: 5px 0; color: green; font-weight: bold; font-size: 18px;">EUR 150.000,00</p>
+        <p style="margin: 0; color: #333; font-size: 15px;">CHF 146.775,00 bei Kurs 0,9785</p>
       </div>
 
       <div class="info-box">
         <p style="margin: 0; font-weight: bold; font-size: 18px;">Zinsertrag</p>
         <p style="margin: 5px 0; color: green; font-weight: bold; font-size: 18px;">EUR 0,00</p>
-        <p style="margin: 0; color: #333; font-size: 15px;">CHF 0,00 bei Kurs 0,9247</p>
+        <p style="margin: 0; color: #333; font-size: 15px;">CHF 0,00 bei Kurs 0,9785</p>
       </div>
 
       <div class="info-box" style="grid-column: span 2; padding: 20px;">
@@ -159,6 +159,17 @@
         <p id="amount" style="margin-top: 10px; font-weight: bold; color: #444; font-size: 1.1rem;">Berechne...</p>
         <p id="daysLeft" style="font-size: 0.95rem; color: #777;"></p>
       </div>
+
+      <!-- Bronse Block – direkt unter Silver einfügen -->
+<div class="info-box" style="grid-column: span 2; padding: 20px; margin-top: 20px;">
+  <p style="margin: 0; font-weight: bold; font-size: 18px;">Zinsertrag Anlagepaket Bronse</p>
+  <div style="margin-top: 12px; height: 28px; background: #eee; border-radius: 14px; overflow: hidden;">
+    <div id="barBronse" style="height: 100%; background: #4CAF50; width: 0%; transition: width 1s ease-in-out;"></div>
+  </div>
+  <p id="amountBronse" style="margin-top: 10px; font-weight: bold; color: #444; font-size: 1.1rem;">Berechne...</p>
+  <p id="daysLeftBronse" style="font-size: 0.95rem; color: #777;"></p>
+</div>
+
     </div>
 
     <div class="info-box" style="margin-top: 20px;">
@@ -167,10 +178,10 @@
 
       <div class="grid-boxes">
         <div class="info-box">
+          <p class="label">Bank:</p>
+          <p>Schwyzer Kantonalbank</p>
           <p class="label">Kontonummer:</p>
           <p>009631703644</p>
-          <p class="label">Bankleitzahl:</p>
-          <p>00777</p>
           <p class="label">IBAN:</p>
           <p>CH34 0077 7009 6317 0364 4</p>
           <p class="label">BIC (SWIFT):</p>
@@ -191,7 +202,7 @@
     </div>
 
     <div class="info-box" style="margin-top: 20px;">
-      <h3>Anlagepaket Silver</h3>
+      <h3>Anlagepaket Silver (Schwyzer Kantonalbank)</h3>
       <hr style="border: none; height: 1px; background-color: #ccc; margin: 8px 0;">
 
       <div class="grid-boxes">
@@ -207,6 +218,56 @@
           <p>4,30 % p.a.</p>
           <p class="label">Zinsertrag:</p>
           <p>2.558,25 EUR</p>
+        </div>
+      </div>
+    </div>
+
+<div class="info-box" style="margin-top: 20px;">
+      <h3>Kontoinhaber: Udo John</h3>
+      <hr style="border: none; height: 1px; background-color: #ccc; margin: 8px 0;">
+
+      <div class="grid-boxes">
+        <div class="info-box">
+          <p class="label">Bank:</p>
+          <p>Thurgauer Kantonalbank</p>
+          <p class="label">Kontonummer:</p>
+          <p>009631703644</p>
+          <p class="label">IBAN:</p>
+          <p>CH8600784298448952001</p>
+          <p class="label">BIC (SWIFT):</p>
+          <p>KBTGCH22XXX</p>
+        </div>
+
+        <div class="info-box">
+          <p class="label">Straße:</p>
+          <p>Rosenkamp 4a</p>
+          <p class="label">PLZ:</p>
+          <p>49324</p>
+          <p class="label">Ort:</p>
+          <p>Melle</p>
+          <p class="label">Land:</p>
+          <p>Deutschland</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="info-box" style="margin-top: 20px;">
+      <h3>Anlagepaket Bronse (Thurgauer Kantonalbank)</h3>
+      <hr style="border: none; height: 1px; background-color: #ccc; margin: 8px 0;">
+
+      <div class="grid-boxes">
+        <div class="info-box">
+          <p class="label">Anlagesumme</p>
+          <p>50.000 EUR</p>
+          <p class="label">Laufzeit:</p>
+          <p>6 Monate</p>
+        </div>
+
+        <div class="info-box">
+          <p class="label">Zinssatz:</p>
+          <p>4,70 % p.a.</p>
+          <p class="label">Zinsertrag:</p>
+          <p>1.595,00 EUR</p>
         </div>
       </div>
     </div>
@@ -237,13 +298,39 @@
 
       <div class="grid-boxes">
         <div class="info-box">
+          <p class="label">Zahlung erforderlich:</p>
+          <p>Der Betrag ist zur Zahlung fällig.</p>
+          <p class="label">Betrag CHF:</p>
+          <p style="color: green;">CHF 48.925,00</p>
+          <p class="label">Betrag EUR:</p>
+          <p style="color: green;">EUR 50.000,00</p>
+          <p>Kurs: 0,9785 (EUR/CHF)</p>
+        </div>
+
+        <div class="info-box">
+          <p class="label">Vertragseingang:</p>
+          <p>12.05.2025 um 09:41 Uhr</p>
+
+          <p class="label">Buchungstext:</p>
+          <p>
+            Udo John<br>
+            Rosenkamp 4A<br>
+            49434 Melle<br>
+            Deutschland<br>
+            Mitteilung: 009631704014/U/J<br>
+          </p>
+        </div>
+      </div>
+
+            <div class="grid-boxes">
+        <div class="info-box">
           <p class="label">Zahlungseingang:</p>
           <p>14.04.2025 um 16:19 Uhr</p>
           <p class="label">Betrag CHF:</p>
           <p style="color: green;">CHF 92.470,00</p>
           <p class="label">Betrag EUR:</p>
           <p style="color: green;">EUR 100.000,00</p>
-          <p>Kurs: 0,9247 (EUR/CHF)</p>
+          <p>Kurs: 0,9785 (EUR/CHF)</p>
         </div>
 
         <div class="info-box">
@@ -338,5 +425,36 @@
         : `Zinsertrag vollständig erreicht.`;
     }, 300);
   </script>
+
+<script>
+  // Separate Berechnung für das Bronse-Paket
+  document.addEventListener("DOMContentLoaded", function () {
+    const totalBronse = 1595.00; // Gesamtzinsertrag
+    const daysBronse = 180;      // Laufzeit in Tagen
+    const startDateBronse = new Date("2025-05-11");
+    const today = new Date();
+
+    const timeDiff = today - startDateBronse;
+    const daysPassed = Math.max(0, Math.floor(timeDiff / (1000 * 60 * 60 * 24)));
+    const daysRemaining = Math.max(0, daysBronse - daysPassed);
+    const dailyEarning = totalBronse / daysBronse;
+    const currentEarnings = Math.min(daysPassed * dailyEarning, totalBronse);
+    const progress = (currentEarnings / totalBronse) * 100;
+
+    const bar = document.getElementById("barBronse");
+    const amountDisplay = document.getElementById("amountBronse");
+    const daysLeftDisplay = document.getElementById("daysLeftBronse");
+
+    setTimeout(() => {
+      bar.style.width = `${progress}%`;
+      amountDisplay.textContent = `${currentEarnings.toFixed(2).replace('.', ',')} € von 1.595,00 €`;
+      daysLeftDisplay.textContent = daysRemaining > 0
+        ? `Noch ${daysRemaining} Tag${daysRemaining === 1 ? '' : 'e'} bis vollständiger Zinsertrag.`
+        : `Zinsertrag vollständig erreicht.`;
+    }, 300);
+  });
+</script>
+
+
 </body>
 </html>
